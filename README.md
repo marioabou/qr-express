@@ -1,4 +1,3 @@
-
 # QR Express
 
 QR Express is a simple and efficient tool for generating QR codes for your website URLs. This project leverages HTML, CSS, and JavaScript to create a user-friendly interface for instant QR code generation.
@@ -17,7 +16,7 @@ QR Express is a simple and efficient tool for generating QR codes for your websi
 
 ## Demo
 
-You can access the live demo of the project here: [QR Express Demo](https://your-github-username.github.io/qr-express)
+You can access the live demo of the project here: [QR Express Demo](https://marioabou.github.io/qr-express)
 
 ## Features
 
@@ -37,7 +36,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-github-username/qr-express.git
+   git clone https://github.com/marioabou/qr-express.git
    ```
 2. **Navigate to the project directory:**
    ```sh
@@ -187,6 +186,8 @@ downloadButton.addEventListener("click", () => {
 });
 ```
 
+## Author: Mario Alberto Bouchot Osorio
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
@@ -194,4 +195,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 This project is licensed under the MIT License.
-
