@@ -23,6 +23,46 @@
     <title>QR Express</title>
   </head>
   <body>
-    ...
+  <main>
+    <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-10 md:flex-row">
+      <div class="w-full md:w-2/3 mr-24">
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl font-bold mb-5 md:text-4xl">Instant QR Generation</h1>
+        </div>
+        <p class="mb-4">Welcome to QR Express, your passport to effortless QR Code creation for your website. Watch as QR Codes whisk smartphone users to your online world with speed and simplicity!</p>
+        <style>
+          .mobile-only {
+            display: none;
+          }
+          @media (max-width: 768px) {
+            .mobile-only {
+              display: block;
+            }
+          }
+        </style>
+        <p><strong>Enter your URL below to generate a QR Code and download the image.</strong></p>
+        <div class="mobile-only">
+          <p>After generating your QR Code, kindly stroll up to preview your generated QR Code, then click on the 'Download QR Code' button to save the QR Code as an image on your device</p>
+        </div>
+        <br>
+        <em class="text-sm">Please make sure to include the 'http://' or 'https://' prefix in your URL for accurate QR code generation.</em>
+        <form id="generate-form" class="mt-4">
+          <input id="url" type="url" placeholder="Enter a URL" class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
+          <select class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none" name="size" id="size">
+            <option value="100">100x100</option>
+            <option value="200">200x200</option>
+            <option value="300" selected>300x300</option>
+            <option value="400">400x400</option>
+            <option value="500">500x500</option>
+            <option value="600">600x600</option>
+            <option value="700">700x700</option>
+          </select>
+          <div class="flex justify-center items-center">
+            <button class="bgs-custom-color rounded w-2/3 text-white py-3 px-4 mt-5 hover:bg-custom-hover-color border" type="submit">Generate QR Code</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>	
   </body>
 </html>
